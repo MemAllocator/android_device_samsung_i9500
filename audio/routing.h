@@ -74,15 +74,15 @@ const struct route_config voice_speaker_wb = {
 const struct route_config voice_earpiece = {
     "voice-earpiece",
     "voice-main-mic",
-    { ES325_PRESET_VOIP_HANDHELD,
-      ES325_PRESET_VOIP_HANDHELD }
+     { ES325_PRESET_VOIP_DESKTOP,
+      ES325_PRESET_VOIP_DESKTOP }
 };
 
 const struct route_config voice_earpiece_wb = {
     "voice-earpiece-wb",
     "voice-main-mic-wb",
-    { ES325_PRESET_VOIP_HANDHELD,
-      ES325_PRESET_VOIP_HANDHELD }
+     { ES325_PRESET_VOIP_DESKTOP,
+      ES325_PRESET_VOIP_DESKTOP }
 };
 
 const struct route_config voice_headphones = {
