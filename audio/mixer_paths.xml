@@ -199,8 +199,6 @@ INPUT_CHANNEL_MAP {
   </path>
 
   <path name="channel-none">
-    <ctl name="AIF3TX1 Input 1" value="ASRC1L" />
-    <ctl name="AIF3TX2 Input 1" value="ASRC1R" />
     <ctl name="ASRC1L Input" value="AIF1RX1" />
     <ctl name="ASRC1R Input" value="AIF1RX2" />
   </path>
@@ -216,7 +214,7 @@ INPUT_CHANNEL_MAP {
   </path>
 
    <path name="speaker-volume-normal">
-      <ctl name="Speaker Digital Volume" value="132" />
+      <ctl name="Speaker Digital Volume" value="128" />
 <ctl name="SPKOUTL Input 1 Volume" value="32" />
 <ctl name="SPKOUTL Input 2 Volume" value="32" />
   </path>
@@ -321,7 +319,6 @@ INPUT_CHANNEL_MAP {
   <path name="voice-speaker">
    <path name="speaker" />  
    <path name="speaker-volume-incall" />
-	  <ctl name="AIF2 digital mute" value="1" />
    <path name="verb-voicecall" />  
 </path>
 
@@ -332,7 +329,6 @@ INPUT_CHANNEL_MAP {
       <ctl name="EPOUT Input 2 Volume" value="32" />
       <ctl name="EPOUT Input 3 Volume" value="32" />
       <ctl name="EPOUT Input 4 Volume" value="32" />
-	  <ctl name="AIF2 digital mute" value="1" />
     <path name="verb-voicecall" />
   </path>
 
@@ -492,6 +488,11 @@ INPUT_CHANNEL_MAP {
       <path name="channel-left" />
       <path name="aif2-stereo-mic" />
       <path name="builtin-mic" />
+      <path name="back-mic" />
+      <ctl name="IN1L Digital Volume" value="130" />
+      <ctl name="IN2L Digital Volume" value="130" />
+      <ctl name="IN1L Volume" value="20" />
+      <ctl name="IN2L Volume" value="19" />
   </path>
 
   <path name="communication-main-mic">
