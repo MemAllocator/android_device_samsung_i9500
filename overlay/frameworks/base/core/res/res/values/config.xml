@@ -181,6 +181,12 @@
     <!-- Is the device LTE capable -->
     <bool name="config_lte_capable">false</bool>
 
+<!-- Whether cpu boost is enabled for overscroller fling. -->
+   <bool name="config_enableCpuBoostForOverScrollerFling">true</bool>
+
+    <!-- Whether cpu boost is enabled for horizontal scroll. -->
+    <bool name="config_enableCpuBoostForScroller">true</bool>
+
     <!-- Flag indicating whether we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
