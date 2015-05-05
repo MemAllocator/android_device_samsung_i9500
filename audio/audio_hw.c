@@ -1598,18 +1598,7 @@ static char * adev_get_parameters(const struct audio_hw_device *dev,
 
     struct audio_device *adev = (struct audio_device *)dev;
     ALOGV("%s: key: %s", __func__, keys);
-    struct str_parms *parms = str_parms_create_str(keys);
-    char value[32];
-    int ret = str_parms_get_str(parms, "ec_supported", value, sizeof(value));
-    char *str;
-
-    str_parms_destroy(parms);
-    if (ret >= 0) {
-        parms = str_parms_create_str("ec_supported=yes");
-        str = str_parms_to_str(parms);
-        str_parms_destroy(parms);
-        return str;
-    }   
+    
     if (strcmp(keys, "volume_boost") == 0) {
         if (adev->volume_boost) {
             return strdup("volume_boost=on");
