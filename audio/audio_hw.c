@@ -1597,8 +1597,9 @@ static char * adev_get_parameters(const struct audio_hw_device *dev,
 {
 
     struct audio_device *adev = (struct audio_device *)dev;
+
     ALOGV("%s: key: %s", __func__, keys);
-    
+
     if (strcmp(keys, "volume_boost") == 0) {
         if (adev->volume_boost) {
             return strdup("volume_boost=on");
