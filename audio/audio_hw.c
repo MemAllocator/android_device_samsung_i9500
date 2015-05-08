@@ -773,9 +773,11 @@ static int get_next_buffer(struct resampler_buffer_provider *buffer_provider,
     }
 
     if (in->frames_in == 0) {
+
+     
         in->read_status = pcm_read(in->pcm,
                                    (void*)in->buffer,
-                                   pcm_frames_to_bytes(in->pcm, in->config->period_size));;
+                                   pcm_frames_to_bytes(in->pcm, in->config->period_size));
         if (in->read_status != 0) {
             ALOGE("get_next_buffer() pcm_read error %d", in->read_status);
             buffer->raw = NULL;
@@ -794,7 +796,7 @@ static int get_next_buffer(struct resampler_buffer_provider *buffer_provider,
     buffer->frame_count = (buffer->frame_count > in->frames_in) ?
                                 in->frames_in : buffer->frame_count;
     buffer->i16 = in->buffer +
-            (in->config->period_size - in->frames_in) * popcount(in->channel_mask);
+            (in->config->period_size - in->frames_in) * audio_channel_count_from_in_mask(in->channel_mask);
 
     return in->read_status;
 
