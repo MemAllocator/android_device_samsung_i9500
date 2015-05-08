@@ -46,4 +46,7 @@
     <!-- Defines the sysfs path to the torch led to be used as a flashlight. Usable with config_useCameraInterface=true -->
     <string name="config_flashDevice">/sys/class/leds/torch-sec1/brightness</string>
 
+    <!-- Doze: check proximity sensor before pulsing from intent? -->
+    <bool name="doze_proximity_check_before_pulse_intent">true</bool>
+
 </resources>
