@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
 
+# Power
+PRODUCT_PACKAGES += \
+    power.universal5410
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.universal5410 \
