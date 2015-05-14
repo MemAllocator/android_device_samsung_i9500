@@ -147,16 +147,6 @@ PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml \
     $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
-# OMX
-PRODUCT_PACKAGES += \
-    libExynosOMX_Core \
-    libOMX.Exynos.MPEG4.Decoder \
-    libOMX.Exynos.AVC.Decoder \
-    libOMX.Exynos.MPEG4.Encoder \
-    libOMX.Exynos.AVC.Encoder \
-    libOMX.Exynos.MP3.Decoder \
-    libstagefrighthw
-
 # Radio
 PRODUCT_PACKAGES += \
     libsecril-client \
