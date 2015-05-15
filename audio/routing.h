@@ -60,29 +60,29 @@ struct route_config {
 const struct route_config voice_speaker = {
     "voice-speaker",
     "voice-speaker-main-mic",
-    { ES325_PRESET_ASRA_HANDHELD,
-      ES325_PRESET_ASRA_DESKTOP }
+   { ES325_PRESET_VOIP_DESKTOP,
+      ES325_PRESET_VOIP_DESKTOP }
 };
 
 const struct route_config voice_speaker_wb = {
     "voice-speaker-wb",
     "voice-speaker-main-mic",
-    { ES325_PRESET_ASRA_HANDHELD,
-      ES325_PRESET_ASRA_DESKTOP }
+    { ES325_PRESET_VOIP_DESKTOP,
+      ES325_PRESET_VOIP_DESKTOP }
 };
 
 const struct route_config voice_earpiece = {
     "voice-earpiece",
     "voice-main-mic",
-     { ES325_PRESET_ASRA_HANDHELD,
-      ES325_PRESET_ASRA_DESKTOP }
+     { ES325_PRESET_VOIP_DESKTOP,
+      ES325_PRESET_VOIP_DESKTOP }
 };
 
 const struct route_config voice_earpiece_wb = {
     "voice-earpiece-wb",
     "voice-main-mic-wb",
-     { ES325_PRESET_ASRA_HANDHELD,
-      ES325_PRESET_ASRA_DESKTOP }
+    { ES325_PRESET_VOIP_DESKTOP,
+      ES325_PRESET_VOIP_DESKTOP }
 };
 
 const struct route_config voice_headphones = {
