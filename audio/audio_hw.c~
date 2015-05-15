@@ -103,7 +103,7 @@ struct pcm_config pcm_config_in_low_latency = {
 
 struct pcm_config pcm_config_sco = {
     .channels = 1,
-    .rate = 16000,
+    .rate = 8000,
     .period_size = 128,
     .period_count = 2,
     .format = PCM_FORMAT_S16_LE,
@@ -1272,6 +1272,8 @@ static void do_in_standby(struct stream_in *in)
 
     eS325_SetActiveIoHandle(ES325_IO_HANDLE_NONE);
 
+    pthread_mutex_unlock(&in->lock);
+    pthread_mutex_unlock(&in->dev->lock); 
     
 }
 

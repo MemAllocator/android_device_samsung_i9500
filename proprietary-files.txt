@@ -30,6 +30,18 @@ vendor/lib/libsrv_init.so
 vendor/lib/libsrv_um.so
 vendor/lib/libusc.so
 
+
+# OMX
+system/lib/omx/libOMX.Exynos.VP8.Decoder.so
+system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so
+system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so 
+system/lib/omx/libOMX.Exynos.MP3.Decoder.so:system/lib/omx/libOMX.Exynos.MP3.Decoder.so 
+system/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so 
+system/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so 
+system/lib/lib/ExynosOMX_Core.so:system/lib/libExynosOMX_Core.so 
+system/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so 
+
+
 # GPS
 bin/gpsd
 lib/hw/gps.default.so

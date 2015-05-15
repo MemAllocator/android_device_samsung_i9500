@@ -63,8 +63,6 @@ extern "C" {
      * stopped.
      */
     int eS325_SetActiveIoHandle(audio_io_handle_t handle);
-    int adnc_release(effect_handle_t interface);
-    int Adnc_SetEchoCancellationInt_l(bool aec_on);
 
     int adnc_create(const effect_uuid_t *uuid,
             int32_t         sessionId,
