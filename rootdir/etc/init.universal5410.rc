@@ -112,12 +112,12 @@ on boot
     # 4.3 needs this
     chmod 0644 /proc/cmdline
 
-# Permissions for Bluetooth
-	setprop ro.bt.bdaddr_path "/efs/bluetooth/bt_addr"
-	chown bluetooth net_bt_stack ro.bt.bdaddr_path
-	chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/state
-	chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/type
-	chmod 0660 /sys/class/rfkill/rfkill0/state
+# Permissions for bluetooth
+    setprop ro.bt.bdaddr_path "/efs/bluetooth/bt_addr"
+    chown bluetooth bluetooth ro.bt.bdaddr_path
+    chmod 0660 /sys/class/rfkill/rfkill0/state
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
 
 # Permissions for TouchScreen
     chmod 0660 /sys/class/sec/tsp/cmd
