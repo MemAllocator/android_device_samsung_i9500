@@ -474,7 +474,6 @@ INPUT_CHANNEL_MAP {
       <path name="channel-stereo" />
       <path name="aif2-stereo-mic" />
       <path name="builtin-mic" />
-      <path name="back-mic" />
       <ctl name="IN1L Digital Volume" value="140" />
       <ctl name="IN2L Digital Volume" value="140" />
       <ctl name="IN1L Volume" value="25" />
